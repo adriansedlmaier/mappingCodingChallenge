@@ -28,8 +28,8 @@ public class VideoBlock extends ArticleBlock {
     public VideoBlockDto toDto() {
         VideoBlockDto blockDto = new VideoBlockDto();
         blockDto.setSortIndex(getSortIndex());
-        blockDto.setUrl(this.url);
-        blockDto.setType(type);
+        blockDto.setUrl(getUrl());
+        blockDto.setType(getType());
 
         return blockDto;
     }

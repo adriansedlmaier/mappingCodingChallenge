@@ -23,7 +23,7 @@ public class GalleryBlock extends ArticleBlock {
     public GalleryBlockDto toDto() {
         GalleryBlockDto blockDto = new GalleryBlockDto();
         blockDto.setSortIndex(getSortIndex());
-        blockDto.setImages(images.stream().map(Image::toDto).collect(Collectors.toList()));
+        blockDto.setImages(getImages().stream().map(Image::toDto).collect(Collectors.toList()));
 
         return blockDto;
     }

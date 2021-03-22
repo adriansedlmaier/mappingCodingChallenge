@@ -19,7 +19,7 @@ public class ImageBlock extends ArticleBlock {
     public ImageBlockDto toDto() {
         ImageBlockDto imageBlockDto = new ImageBlockDto();
         imageBlockDto.setSortIndex(getSortIndex());
-        imageBlockDto.setImage(image.toDto());
+        imageBlockDto.setImage(getImage().toDto());
 
         return imageBlockDto;
     }
